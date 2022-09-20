@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\rajeswari.ps\eclipse-workspace\Mobile World\Mobileworld\.metadata\.plugins\org.eclipse.jdt.core
+2337261459.index

@@ -21,7 +21,6 @@ public class SignUp{
        public void testdata(String Fname,String Lname,String Email,String passwrd,String number,String date,String bio) throws InterruptedException
        {
        driver.findElement(By.cssSelector("#myName")).sendKeys(Fname);
-    
        driver.findElement(By.cssSelector("input[placeholder='Last Name']")).sendKeys(Lname);
        //Thread.sleep(1000);
        driver.findElement(By.cssSelector("input[placeholder='Enter Email']")).sendKeys(Email);
@@ -34,7 +33,7 @@ public class SignUp{
        //Thread.sleep(500);
        driver.findElement(By.xpath("//textarea[@placeholder='Short Bio']")).sendKeys(bio);
        //Thread.sleep(500);
-       driver.findElement(By.xpath("//div[@class='col-md-2']//input[@name='gender']")).click();
+       driver.findElement(By.xpath("//div[@class='col-md-3']//input[@name='gender']")).click();
        //Thread.sleep(500);
        driver.findElement(By.xpath("//button[@type='submit']")).click();
        //Thread.sleep(500);
@@ -43,24 +42,40 @@ public class SignUp{
   }
        @DataProvider(name = "datasets")
        public Object[][] datasets(){
-           Object[][] data = {{"Nivetha","Sree","Nivetha@gmail.com","rinu123","6238777453","06/14/2000","ghijklmnopqrstuv"},
-                               {"","","Nivetha@gmail.com","rinu123","","06/14/2000","ghijklmnopqrstuv"},
-                               {"Nivetha123","Sree456","Nivetha@gmail.com","rinu123","6238777453","12/12/2022","qwertyuiopaNivethafghjkl"},
-                               {"123456","567","Nivethagmail.com","rinu123","6238777453","12/12/2022","qwertyuiopaNivethafghjkl"},
-                               {"Nivetha","aabcdefghijklmnopqrs","Nivetha@gmail.com","rinu123","6238777453","12/12/2022","qwertyuiopaNivethafghjkl"},
-                               {"Nivetha","Sree","Nivetha@gmail.com","rinu123","6238777453","12/12/2022","qwertyuiopaNivethafghjkl"},
-                               {"Nivetha","Nivetha","Nivetha@gmail","Nivetha","dfghggffd","05/20/2000",""},
-                               {"Nivetha","Sree","Nivetha@gmail.com","Sree@123","6238777453","05/20/2022","hai"},
-                               {"Nivetha","Sree","@gmail.com","Sree@123","6238777453","05/20/2000","hai"},
-                               {"Nivetha","Sree","Nivetha@gmail.com","s1@","6238777453","05/20/2000","hai"},
-                               {"Nivetha","Sree","Nivetha@gmail.com","s1@wh33h","12334444555","05/20/2022","hai"},
-                               {"Nivetha","Sree","Nivetha@gmail.com","s","6238777453","05/20/2022","hai"},
-                               {"Nivetha","Sree","Nivetha@gmail.com","s1@aw2@!wssssjjj","6238777453","05/20/2022","hai"},
-                               {"Nivetha","Sree","Nivetha@gmail.com","s1@","6238777453","05/20/2022","hai"},
-                               {"Nivetha","Sree","Nivetha@gmail.com","s1@","6238777453","05/20/2021","hai"},
-                               {"Nivetha","Sree","Nivetha@gmail.com","s1@","6238777453","05/20/2022","hai"},
-                               {"Nivetha","Sree","Nivetha@gmail.com","s1@","6238777453","05/20/2022","hai"},
-                               {"Nivetha","Sree","Nivetha@gmail.com","s1@","6238777453","","hai"}};                               
+           Object[][] data = {{"Nivetha","sree","nivetha032000@gmail.com","rinu123","6238777456","10/17/2000","hijklmnopqrstuvwxyz"},
+                               {"","","nivetha032000@gmail.com","rinu123","","10/17/2000","hijklmnopqrstuvwxyz"},
+                               {"Nivetha123","sree123","nivetha032000@gmail.com","rinu123","6238777456","10/17/2000","hijklmnopqrstuvwxyz"},
+                               {"1234567888","45546","Nivethagmail.com","rinu123","6238777456","12/12/2022","hijklmnopqrstuvwxyz"},
+                               {"@#$%%^","@#$%%^","nivetha032000@gmail.com","rinu123","6238777456","10/17/2000","hijklmnopqrstuvwxyz"},
+                               {"Ni","sr","nivetha032000@gmail.com","rinu123","6238777456","10/17/2000","hijklmnopqrstuvwxyz"},
+                               {"Nivethasruthihemamalin","sreegopiajaypunithars","Nivetha@gmail","rinu123","6238777456","10/17/2000","hijklmnopqrstuvwxyz"},
+                               {"Nivethasruthiaja","sreehemamalinihu","nivetha032000@gmail.com","rinu123","6238777456","10/17/2000","hijklmnopqrstuvwxyz"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","rinu123","6238777456","10/17/2000","hijklmnopqrstuvwxyz"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","rinu123","6238777456","10/17/2000","hijklmnopqrstuvwxyz"},
+                               {"Nivetha","sree","","rinu123","6238777456","10/17/2000","hijklmnopqrstuvwxyz"},
+                               {"Nivetha","sree","45678032000@gmail.com","rinu123","6238777456","10/17/2000","hijklmnopqrstuvwxyz"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","rinu123","6238777456","10/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","","6238777456","10/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","rtyuhj","6238777456","10/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","123245","6238777456","10/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","@%^^^^","6238777456","10/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","r1","6238777456","10/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","raju12","6238777456","10/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","nivetha1234","6238777456","10/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","raju123","6238777456","10/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","raju123","6238777456","17/10/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","raju123","6238777456","10//2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","raju123","6238777456","/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","raju123","6238777456","10/17/","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","raju123","6238777456","","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","raju123","6238777456","10/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","raju123","916238777456","10/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","raju1","","10/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","raju1","^@#*#)&^^#","10/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","raju1","rtyh777456","10/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","raju1","rajrtyyuhh","10/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","raju1","623877745","10/17/2000","hijklmnopqrstuvwxy"},
+                               {"Nivetha","sree","nivetha032000@gmail.com","raju1","62387774565","10/17/2000","hijklmnopqrstuvwxy"}};                               
            return data;
            
        }

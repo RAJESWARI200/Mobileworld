@@ -14,6 +14,7 @@ public class SignIn {
         String password = "raju123";
         landingpage.goTo();
         landingpage.character3(name, password);
+        //driver.quit();
         
         
     }
@@ -26,6 +27,8 @@ public class SignIn {
         LandingPage landingpage = new LandingPage(driver);
         landingpage.goTo();
         landingpage.character20(name, password);
+        //driver.quit();
+        
         
     }
 	@Test(description="user is not able to login with username containing only numericals")
@@ -37,10 +40,7 @@ public class SignIn {
         LandingPage landingpage = new LandingPage(driver);
         landingpage.goTo();
         landingpage.character2(name, password);
-        String expected="Error should be displayed below";
-        String actual="driver.getCurrentURL";
-        Assert.assertEquals(actual, expected);
-        
+        //driver.quit();
     }
 	@Test(description="user is not able to login with empty username textfield")
     public void signinginD() throws InterruptedException
@@ -51,10 +51,10 @@ public class SignIn {
         LandingPage landingpage = new LandingPage(driver);
         landingpage.goTo();
         landingpage.character21(name, password);
-        
         String expected="Error should be displayed below";
         String actual="driver.getCurrentURL";
         Assert.assertEquals(actual, expected);
+        //driver.quit();
        
     }
 	@Test(description="user is able to login with valid password")
@@ -66,6 +66,7 @@ public class SignIn {
         LandingPage landingpage = new LandingPage(driver);
         landingpage.goTo();
         landingpage.validemail(name, password);
+        //driver.quit();
        
     }
 	@Test(description="user is not able to login with password containing only alphabetes")
@@ -77,10 +78,10 @@ public class SignIn {
         LandingPage landingpage = new LandingPage(driver);
         landingpage.goTo();
         landingpage.unregisteremail(name, password);
-       
         String expected="Error should be displayed below";
         String actual="driver.getCurrentURL";
         Assert.assertEquals(actual, expected);
+        //driver.quit();
         
     }
 	@Test(description="user is not able to login with password containing only numericals")
@@ -92,10 +93,10 @@ public class SignIn {
         LandingPage landingpage = new LandingPage(driver);
         landingpage.goTo();
         landingpage.validdetails(name, password);
-      
         String expected="Error should be displayed below";
         String actual="driver.getCurrentURL";
         Assert.assertEquals(actual, expected);
+        //driver.quit();
   
     }
 	@Test(description="user is not able to login with  empty password textfield")
@@ -107,10 +108,10 @@ public class SignIn {
         LandingPage landingpage = new LandingPage(driver);
         landingpage.goTo();
         landingpage.pass2(name, password);
-      
         String expected="Error should be displayed below";
         String actual="driver.getCurrentURL";
         Assert.assertEquals(actual, expected);
+        //driver.quit();
        
     }
 	@Test(description="user is not able to login with password containing special characters")
@@ -125,6 +126,7 @@ public class SignIn {
         String expected="Error should be displayed below";
         String actual="driver.getCurrentURL";
         Assert.assertEquals(actual, expected);
+        //driver.quit();
         
     }
 	@Test(description="user is not able to login with password containing only 2 characters")
@@ -139,6 +141,7 @@ public class SignIn {
         String expected="Error should be displayed below";
         String actual="driver.getCurrentURL";
         Assert.assertEquals(actual, expected);
+        //driver.quit();
       
     }
 	@Test(description="user is not able to login with password containing 6 characters")
@@ -150,6 +153,7 @@ public class SignIn {
     	LandingPage landingpage = new LandingPage(driver);
         landingpage.goTo();
         landingpage.pass2(name, password);
+        //driver.quit();
       
     }
 	@Test(description="user is not able to login with password containing 11 characters")
@@ -164,6 +168,7 @@ public class SignIn {
         String expected="Error should be displayed below";
         String actual="driver.getCurrentURL";
         Assert.assertEquals(actual, expected);
+        //driver.quit();
     }
 
 }

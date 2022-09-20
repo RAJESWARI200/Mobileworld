@@ -43,24 +43,24 @@ public class SignUp{
   }
        @DataProvider(name = "datasets")
        public Object[][] datasets(){
-           Object[][] data = {{"sri","ram","sri@gmail.com","sri@123","1234567898","12/12/2022","qwertyuiopasrifghjkl"},
-                               {"abckhdabckabsrikbasab","ram","sri@gmail.com","sri@123","","12/12/2022","qwertyuiopasrifghjkl"},
-                               {"sri","ram","sri@gmail.com","sri@123","1234567890","12/12/2022","qwertyuiopasrifghjkl"},
-                               {"sri","ram","srigmail.com","sri@123","1234567890","12/12/2022","qwertyuiopasrifghjkl"},
-                               {"sri","aabcdefghijklmnopqrs","sri@gmail.com","sri@123","1234567898","12/12/2022","qwertyuiopasrifghjkl"},
-                               {"sri","ram","sri@gmail.com","sri@123","1234567898","12/12/2022","qwertyuiopasrifghjkl"},
-                               {"sri","sri","sri@gmail","sri","dfghggffd","05/20/2000",""},
-                               {"sri","ram","sri@gmail.com","ram@123","123445566666","05/20/2022","hai"},
-                               {"sri","ram","@gmail.com","ram@123","123445566666","05/20/2000","hai"},
-                               {"sri","ram","sri@gmail.com","s1@","12334444555","05/20/2000","hai"},
-                               {"sri","ram","sri@gmail.com","s1@wh33h","12334444555","05/20/2022","hai"},
-                               {"sri","ram","sri@gmail.com","s","12334444555","05/20/2022","hai"},
-                               {"sri","ram","sri@gmail.com","s1@aw2@!wssssjjj","12334444555","05/20/2022","hai"},
-                               {"sri","ram","sri@gmail.com","s1@","12334444555","05/20/2022","hai"},
-                               {"sri","ram","sri@gmail.com","s1@","12334444555","05/20/2021","hai"},
-                               {"sri","ram","sri@gmail.com","s1@","9870915101","05/20/2022","hai"},
-                               {"sri","ram","sri@gmail.com","s1@","12334444555123433","05/20/2022","hai"},
-                               {"sri","ram","sri@gmail.com","s1@","12334$%4555","","hai"}};                               
+           Object[][] data = {{"Nivetha","Sree","Nivetha@gmail.com","rinu123","6238777453","06/14/2000","ghijklmnopqrstuv"},
+                               {"","","Nivetha@gmail.com","rinu123","","06/14/2000","ghijklmnopqrstuv"},
+                               {"Nivetha123","Sree456","Nivetha@gmail.com","rinu123","6238777453","12/12/2022","qwertyuiopaNivethafghjkl"},
+                               {"123456","567","Nivethagmail.com","rinu123","6238777453","12/12/2022","qwertyuiopaNivethafghjkl"},
+                               {"Nivetha","aabcdefghijklmnopqrs","Nivetha@gmail.com","rinu123","6238777453","12/12/2022","qwertyuiopaNivethafghjkl"},
+                               {"Nivetha","Sree","Nivetha@gmail.com","rinu123","6238777453","12/12/2022","qwertyuiopaNivethafghjkl"},
+                               {"Nivetha","Nivetha","Nivetha@gmail","Nivetha","dfghggffd","05/20/2000",""},
+                               {"Nivetha","Sree","Nivetha@gmail.com","Sree@123","6238777453","05/20/2022","hai"},
+                               {"Nivetha","Sree","@gmail.com","Sree@123","6238777453","05/20/2000","hai"},
+                               {"Nivetha","Sree","Nivetha@gmail.com","s1@","6238777453","05/20/2000","hai"},
+                               {"Nivetha","Sree","Nivetha@gmail.com","s1@wh33h","12334444555","05/20/2022","hai"},
+                               {"Nivetha","Sree","Nivetha@gmail.com","s","6238777453","05/20/2022","hai"},
+                               {"Nivetha","Sree","Nivetha@gmail.com","s1@aw2@!wssssjjj","6238777453","05/20/2022","hai"},
+                               {"Nivetha","Sree","Nivetha@gmail.com","s1@","6238777453","05/20/2022","hai"},
+                               {"Nivetha","Sree","Nivetha@gmail.com","s1@","6238777453","05/20/2021","hai"},
+                               {"Nivetha","Sree","Nivetha@gmail.com","s1@","6238777453","05/20/2022","hai"},
+                               {"Nivetha","Sree","Nivetha@gmail.com","s1@","6238777453","05/20/2022","hai"},
+                               {"Nivetha","Sree","Nivetha@gmail.com","s1@","6238777453","","hai"}};                               
            return data;
            
        }
